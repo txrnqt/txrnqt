@@ -1,7 +1,7 @@
 name: Update README cards
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs daily at midnight
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -28,9 +28,13 @@ jobs:
           path: profile/langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
       
+      - name: Check if files exist
+        run: ls -la profile/
+      
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -a -m "Update stats" || echo "nothing to commit"
+          git add profile/
+          git commit -m "Update stats" || echo "nothing to commit"
           git push || echo "nothing to push"
