@@ -1,4 +1,5 @@
 ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=txrnqt&theme=darcula) 
+![Jace's GitHub stats](https://github-readme-stats.vercel.app/api?username=txrnqt&show_icons=true&theme=transparent)
 <!---![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=txrnqt&theme=darcula)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=txrnqt&theme=darcula) --->
 <!---
